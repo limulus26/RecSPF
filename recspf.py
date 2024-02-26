@@ -18,7 +18,7 @@ def get_spf_ips(domain, max_recursions=10):
         pass
 
 if __name__ == '__main__':
-    target_domain = 'ausgrid.com.au' # to be replaced with argparser, or your target domain
+    target_domain = 'google.com.au' # to be replaced with argparser, or your target domain
     spf_ips = list(get_spf_ips(target_domain))
     if spf_ips:
         print(f"IP addresses in SPF records for {target_domain}:")
